@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>API</title>
+</head>
+<body>
+
+<h1>Описание API</h1>
+
+<h2>Методы</h2>
+
+<h3>/api/stories/</h3>
+<p>
+	Получение историй.
+</p>
+
+<p>
+	URL: <a href="/api/stories/">/api/stories/</a>
+</p>
+
+<h4>Параметры</h4>
+
+<ul>
+	<li>
+		<b>date_from</b> - дата с которой получать истории.
+		<br>
+		<small>
+			Пример:
+			<a href="/api/stories/?date_from=2009-09-10">/api/stories/?date_from=2009-09-10</a>
+		</small>
+	</li>
+	<li>
+		<b>date_to</b> - дата до которой получать истории.
+		<br>
+		<small>
+			Пример:
+			<a href="/api/stories/?date_to=2009-10-18 08:35:03">/api/stories/?date_to=2009-10-18 08:35:03</a>
+		</small>
+	</li>
+	<li>
+		<b>author_first_name</b> и <b>author_last_name</b> - имя и фамилия автора истории.
+		<br>
+		<small>
+			Пример:
+			<a href="/api/stories/?author_first_name=Михаил&author_last_name=Иванов">/api/stories/?author_first_name=Михаил&author_last_name=Иванов</a>
+		</small>
+	</li>
+</ul>
+
+</body>
+</html>

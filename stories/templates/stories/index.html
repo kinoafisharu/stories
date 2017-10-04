@@ -1,0 +1,321 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Выходят на этой неделе - киноафиша России</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="{% static 'css/slick.css' %}">
+  <link rel="stylesheet" href="{% static 'css/slick-theme.css' %}">
+  <link rel="stylesheet" href="{% static 'css/all.css' %}">
+</head>
+<body>
+<a href="https://ridero.ru/books/1_0_0_dnei_na_krayu_sveta/" class="link" target="_blank"></a>
+<!-- Pushy Menu -->
+<nav class="pushy pushy-right">
+  <div class="pushy-content">
+    <ul>
+      <li class="pushy-link"><a href="#">В кинотеатрах</a></li>
+      <li class="pushy-link"><a href="#">Скоро</a></li>
+      <li class="pushy-link"><a href="#">Рекомендации</a></li>
+      <li class="pushy-link"><a href="#">Бокс-офис</a></li>
+      <li class="pushy-link"><a href="#">Кино он-лайн</a></li>
+      <li class="pushy-link"><a href="#">Обзоры, мнения и комментарии</a></li>
+      <li class="pushy-link"><a href="#">Новости</a></li>
+      <li class="pushy-link"><a href="#">Мегакритик</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Site Overlay -->
+<div class="site-overlay"></div>
+<div class="container">
+  <div class="main-block">
+    <div class="main-title">
+      <div class="row">
+        <div class="col-lg-6">
+          <a href="{% static 'index.html' %}" class="home"><i class="fa fa-home" aria-hidden="true"></i></a>
+          Киноафиша России - <span class="country">город</span> - Выходят на этой неделе
+        </div>
+        <div class="col-lg-5">
+          <div class="input-group custom-input">
+            <input type="text" class="form-control" placeholder="Что ищем?">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button">Искать</button>
+            </span>
+          </div>
+        </div>
+        <div class="col-lg-1">
+          <a role="button" class="menu-btn btn btn-primary pull-right">&#9776;</a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-4">
+       <div class="left-wrap">
+         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+           <div class="panel panel-default">
+             <div class="panel-heading" role="tab" id="headingOne">
+               <h4 class="panel-title">
+                 <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                   В кинотеатрах
+                 </a>
+               </h4>
+             </div>
+             <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+               <div class="panel-body">
+                 <ul class="collapse-list">
+                   <li class="list-item"><a href="#">Выходят на этой неделе</a></li>
+                   <li class="list-item"><a href="#">Вышли на прошлой неделе</a></li>
+                   <li class="list-item"><a href="#">Сеансы</a></li>
+                 </ul>
+               </div>
+             </div>
+           </div>
+           <div class="panel panel-default">
+             <div class="panel-heading" role="tab" id="headingTwo">
+               <h4 class="panel-title">
+                 <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                   Скоро
+                 </a>
+               </h4>
+             </div>
+             <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+               <div class="panel-body">
+                 <ul class="collapse-list">
+                   <li class="list-item"><a href="#">Скоро на экранах России</a></li>
+                 </ul>
+               </div>
+             </div>
+           </div>
+           <div class="panel panel-default">
+             <div class="panel-heading" role="tab" id="headingThree">
+               <h4 class="panel-title">
+                 <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                   Рекомендации
+                 </a>
+               </h4>
+             </div>
+             <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+               <div class="panel-body">
+                 <ul class="collapse-list">
+                   <li class="list-item"><a href="#">Лучшее сегодня в кинотеатрах</a></li>
+                   <li class="list-item"><a href="#">Топ 250 лучших фильмов по версии IMDb</a></li>
+                 </ul>
+               </div>
+             </div>
+           </div>
+           <div class="panel panel-default">
+             <div class="panel-heading" role="tab" id="heading4">
+               <h4 class="panel-title">
+                 <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                   Бокс-офис
+                 </a>
+               </h4>
+             </div>
+             <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+               <div class="panel-body">
+                 <ul class="collapse-list">
+                   <li class="list-item"><a href="#">Россия</a></li>
+                   <li class="list-item"><a href="#">США</a></li>
+                 </ul>
+               </div>
+             </div>
+           </div>
+           <div class="panel panel-default">
+             <div class="panel-heading" role="tab" id="heading5">
+               <h4 class="panel-title">
+                 <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                   Кино он-лайн
+                 </a>
+               </h4>
+             </div>
+             <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+               <div class="panel-body">
+                 <ul class="collapse-list">
+                   <li class="list-item"><a href="#">Пять случайных фильмов</a></li>
+                   <li class="list-item"><a href="#">Все доступные фильмы</a></li>
+                 </ul>
+               </div>
+             </div>
+           </div>
+           <div class="panel panel-default">
+             <div class="panel-heading" role="tab" id="heading6">
+               <h4 class="panel-title">
+                 <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                   Обзоры, мнения и комментарии
+                 </a>
+               </h4>
+             </div>
+             <div id="collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+               <div class="panel-body">
+                 <ul class="collapse-list">
+                   <li class="list-item"><a href="#">Темы и обзоры</a></li>
+                   <li class="list-item"><a href="#">Отзывы на фильмы</a></li>
+                 </ul>
+               </div>
+             </div>
+           </div>
+           <div class="panel panel-default">
+             <div class="panel-heading" role="tab" id="heading7">
+               <h4 class="panel-title">
+                 <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                   Новости
+                 </a>
+               </h4>
+             </div>
+             <div id="collapse7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+               <div class="panel-body">
+                 <ul class="collapse-list">
+                   <li class="list-item"><a href="#">Архив Киноафиши</a></li>
+                   <li class="list-item"><a href="#">Новости мирового кино</a></li>
+                   <li class="list-item"><a href="#">Новости российского кинопоказа</a></li>
+                 </ul>
+               </div>
+             </div>
+           </div>
+           <div class="panel panel-default">
+             <div class="panel-heading" role="tab" id="heading7">
+               <h4 class="panel-title">
+                 <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                   Мегакритик
+                 </a>
+               </h4>
+             </div>
+             <div id="collapse8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+               <div class="panel-body">
+                 <ul class="collapse-list">
+                   <li class="list-item"><a href="https://www.megacritic.ru/" target="_blank">Перейти на агрегатор кинокритики</a></li>
+                 </ul>
+               </div>
+             </div>
+           </div>
+         </div>
+         <div class="banner-block">
+           <span class="banner-title">Реклама</span>
+           <div class="banner-box">
+             <span class="banner-text">Banner</span>
+           </div>
+         </div>
+         <div class="advertising">
+           <div class="advertising-row">
+             Качественная <a href="http://www.tipograf.info/" class="adv-link" target="_blank">оперативная полиграфия в типографии Москвы</a>, большой выбор полиграфической продукции.
+           </div>
+           <div class="advertising-row">
+             Профессиональное <a href="http://www.elenara.ru/" class="adv-link" target="_blank">рекламное агентство</a>, полный цикл рекламных услуг.
+           </div>
+           <div class="advertising-row">
+             Оперативность, конфеденциальность и кaчеcтво услуг: <a href="http://www.eastunion.ru/" class="adv-link" target="_blank">аренда самолета</a> деловой авиации в Москве и регионах, зарубежом.
+           </div>
+         </div>
+       </div>
+      </div>
+      <div class="col-lg-8 col-md-8">
+        <div class="right-wrap">
+          <div class="main-slider">
+            <div class="main-slider-item">
+              <div class="film-heading">
+                <span class="annotation"><a href="#" class="actor">Имя Актера</a> в фильме</span>
+                <a class="film-name">{{ art.name }}</a>
+              </div>
+              <div class="film-container">
+                <div class="film-description">
+                  <span class="info">Страна / жанр фильма / продолжительность в минутах</span>
+                  <div class="descr">{{ art.text|safe }}
+                    <a href="#" class="more">Подробнее <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                  </div>
+                  <div class="poster-gallery">
+                    <a data-fancybox="gallery" href="{% static 'img/02.jpg' %}"><img src="{% static 'img/02_180x87.jpg' %}"></a>
+                    <a data-fancybox="gallery" href="{% static 'img/03.jpg' %}"><img src="{% static 'img/03_180x75.jpg' %}"></a>
+                    <a data-fancybox="gallery" href="{% static 'img/02.jpg' %}"><img src="{% static 'img/02_180x87.jpg' %}"></a>
+                  </div>
+                  <div class="trailer-btn-wrap">
+                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#trailer"><i class="fa fa-film" aria-hidden="true"></i> Посмотреть трейлер к фильму</button>
+
+                  </div>
+                </div>
+                <div class="film-poster">
+                  <img src="{% static 'img/poster.jpg' %}" alt="poster">
+                  <div class="btn-wrap">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal"><i class="fa fa-thumbs-up" aria-hidden="true"></i> Оценить фильм</button>
+                  </div>
+                  <div class="btn-wrap">
+                    <a class="btn btn-primary"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Оставить отзыв</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="main-slider-item"></div>
+            <div class="main-slider-item"></div>
+            <div class="main-slider-item"></div>
+            <div class="main-slider-item"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title modal-title-custom" id="myModalLabel">Пожалуйста, оцените фильм</h4>
+      </div>
+      <div class="modal-body">
+        <div class="radio-holder">
+          <div class="eye">
+            <span class="radio-heading">Для глаз и ушей:</span>
+            <p><input name="eye" type="radio" value="super"> Супер</p>
+            <p><input name="eye" type="radio" value="good"> Хорошо</p>
+            <p><input name="eye" type="radio" value="skuchno"> Скучно</p>
+          </div>
+          <div class="mind">
+            <span class="radio-heading">Для ума:</span>
+            <p><input name="mind" type="radio" value="silno"> Сильно</p>
+            <p><input name="mind" type="radio" value="zanatno"> Занятно</p>
+            <p><input name="mind" type="radio" value="sili"> Глупо</p>
+          </div>
+          <div class="heart">
+            <span class="radio-heading">Для сердца:</span>
+            <p><input name="heart" type="radio" value="trogaet"> Трогает</p>
+            <p><input name="heart" type="radio" value="tak_sebe"> Так себе</p>
+            <p><input name="heart" type="radio" value="razdragaet"> Раздражает</p>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Отмена</button>
+        <button type="button" class="btn btn-primary">Сохранить</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="modal fade" id="trailer" tabindex="-1" role="dialog" aria-labelledby="trailer">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content trailer-content">
+        <iframe width="100%" height="330" src="https://www.youtube.com/embed/y-QKFxLWEDw?ecver=1" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+      </div>
+    </div>
+  </div>
+  <footer class="footer text-center">
+    <span class="footer-adv">Киноафиша России - одно из приложений, использующих базу <a href="http://kinoinfo.ru/" target="_blank">Киноинфо</a>.</span>
+    <span class="footer-adv">База содержит актуальную информацию о более чем <a href="http://www.kinoafisha.ru/film/list/2015">35 тысяч фильмов</a>. Взаимодействие с базой - через <a
+            href="http://kinoinfo.ru/api/" target="_blank"></a>. Разработчики: <a href="http://www.kinoafisha.ru/user/profile/7518740/">Михаил Иванов</a>, <a href="https://plus.google.com/u/0/110631826052054330418">Юрий Данилевский</a>. </span>
+    <span class="footer-adv">(с) <a href="http://www.kinoafisha.ru/user/profile/7518740/">ИП Михаил Иванов</a> 2014-2017</span>
+  </footer>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="{% static 'libs/slick.js' %}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
+<script src="{% static 'libs/pushy.min.js' %}"></script>
+<script src="{% static 'libs/bootstrap.min.js' %}"></script>
+<script src="{% static 'libs/main.js' %}"></script>
+</body>
+</html>
