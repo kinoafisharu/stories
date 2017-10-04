@@ -16,6 +16,7 @@ import sys
 
 
 # это локальные настройки
+# допустим это ваше изменение, мы добавим комментарий для теста
 sys.path.insert(0, '/home/asteroid/projects/all/projects/stories/app')
 sys.path.insert(0, '/home/asteroid/projects/all/projects/stories')
 
